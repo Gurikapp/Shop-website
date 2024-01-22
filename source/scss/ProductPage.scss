@@ -1,0 +1,495 @@
+@import "Layout.scss";
+
+main {
+  padding: 0px 90px;
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+  border-top: rgba(0, 0, 0, 0.1) solid 1px;
+  padding-top: 24px;
+  a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Satoshi;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    span {
+      color: #000;
+      font-family: Satoshi;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
+
+.product {
+  display: flex;
+  flex-direction: row;
+  padding-top: 36px;
+  .productImages {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    padding-right: 40px;
+    .productImagesSlider {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+  }
+  .productInfo {
+    display: flex;
+    flex-direction: column;
+    h1 {
+      color: #000;
+      font-family: Integral CF;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    .productInfoRating {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 7px;
+      p {
+        color: #000;
+        font-family: Satoshi;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-left: 9px;
+        span {
+          color: rgba(0, 0, 0, 0.6);
+          font-family: Satoshi;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+    .productInfoPrice {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 12px;
+      h4 {
+        color: #000;
+        font-family: Satoshi;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      h5 {
+        color: rgba(0, 0, 0, 0.3);
+        font-family: Satoshi;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      h6 {
+        color: #f33;
+        font-family: Satoshi;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        border-radius: 62px;
+        background: rgba(255, 51, 51, 0.1);
+        padding: 6px 14px;
+      }
+    }
+    p {
+      color: rgba(0, 0, 0, 0.6);
+      font-family: Satoshi;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+      padding-top: 20px;
+    }
+
+    .productInfoColorselect {
+      display: flex;
+      flex-direction: column;
+      margin: 24px 0px;
+      padding-bottom: 24px;
+      border-top: rgba(0, 0, 0, 0.1) solid 1px;
+      border-bottom: rgba(0, 0, 0, 0.1) solid 1px;
+      .productInfoColorselectPalette {
+        display: flex;
+        flex-direction: row;
+        padding-top: 16px;
+        gap: 16px;
+        .productInfoColorselectPaletteColor1 {
+          border: none;
+          border-radius: 50px;
+          background: #4f4631;
+          padding: 10px;
+          width: 37px;
+        }
+        .productInfoColorselectPaletteColor2 {
+          border: none;
+          border-radius: 50px;
+          background: #314f4a;
+          padding: 10px;
+          width: 37px;
+        }
+        .productInfoColorselectPaletteColor3 {
+          border: none;
+          border-radius: 50px;
+          background: #31344f;
+          padding: 10px;
+          width: 37px;
+        }
+      }
+    }
+    .productInfoSizeselect {
+      display: flex;
+      flex-direction: column;
+      border-bottom: rgba(0, 0, 0, 0.1) solid 1px;
+      p {
+        padding: 0px;
+      }
+      .productInfoSizeselectSizetable {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        padding-top: 16px;
+        padding-bottom: 24px;
+        button {
+          border-radius: 62px;
+          background: #f0f0f0;
+          padding: 12px 24px;
+          color: rgba(0, 0, 0, 0.6);
+          font-family: Satoshi;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          &:hover {
+            background: #000;
+            color: #fff;
+          }
+        }
+      }
+    }
+    .productInfoCart {
+      display: flex;
+      flex-direction: row;
+      padding-top: 24px;
+      gap: 20px;
+      button {
+        border-radius: 62px;
+        background: #000;
+        padding: 16px 164px;
+        color: #fff;
+        font-family: Satoshi;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+      .productInfoCartAddremove {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 38px;
+        border-radius: 62px;
+        background: #f0f0f0;
+        padding: 16px 20px;
+        h2 {
+          color: #000;
+          font-family: Satoshi;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+        button {
+          background: none;
+          border: none;
+          padding: 0px;
+        }
+      }
+    }
+  }
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .reviewsHeader {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .reviewsHeaderSubsections {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      button {
+        color: rgba(0, 0, 0, 0.6);
+        font-family: Satoshi;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        padding: 24px 0px;
+        border: none;
+        background: none;
+        border-bottom: rgba(0, 0, 0, 0.1) solid 1px;
+        width: 100%;
+        &:hover {
+          color: #000;
+          font-family: Satoshi;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 22px;
+          border-bottom: #000000 solid 1px;
+        }
+      }
+    }
+    .reviewsHeaderFilter {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 32px 0px;
+      h2 {
+        color: #000;
+        font-family: Satoshi;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        span {
+          color: rgba(0, 0, 0, 0.6);
+          font-family: Satoshi;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 22px;
+          padding-left: 8px;
+        }
+      }
+      .reviewsHeaderFilterButtons {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        button {
+          display: flex;
+          align-items: center;
+          border-radius: 62px;
+          background: #f0f0f0;
+          padding: 15px 20px;
+          color: #000;
+          font-family: Satoshi;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          img {
+            padding-left: 21px;
+          }
+          &:last-child {
+            color: #fff;
+            background: #000;
+          }
+        }
+      }
+    }
+  }
+  .reviewsMain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .reviewsMainReviewcard {
+      display: flex;
+      flex-direction: column;
+      padding: 28px 32px;
+      border-radius: 20px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      .reviewsMainReviewcardContent {
+        display: flex;
+        flex-direction: row;
+        .reviewsMainReviewcardContentLeft {
+          display: flex;
+          flex-direction: column;
+          .reviewsMainReviewcardRate {
+            gap: 6, 5px;
+            padding-bottom: 15px;
+          }
+          .reviewsMainReviewcardName {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 4px;
+            padding-bottom: 12px;
+            h3 {
+              color: #000;
+              font-family: Satoshi;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 22px; /* 110% */
+            }
+          }
+          p {
+            color: rgba(0, 0, 0, 0.6);
+            font-family: Satoshi;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px;
+            padding-bottom: 24px;
+          }
+        }
+        .reviewsMainReviewcardContentRight {
+          button {
+            border: none;
+            background: none;
+          }
+        }
+      }
+      > p {
+        color: rgba(0, 0, 0, 0.6);
+        font-family: Satoshi;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 22px;
+      }
+    }
+  }
+  .reviewsFooter {
+    padding-top: 36px;
+    button {
+      padding: 16px 54px;
+      background: none;
+      border: none;
+      color: #000;
+      font-family: Satoshi;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+}
+
+.alsolike {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 64px;
+  padding-bottom: 78px;
+  h2 {
+    padding-bottom: 50px;
+    color: #000;
+    text-align: center;
+    font-family: Integral CF;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .alsolikeList {
+    display: flex;
+    flex-direction: row;
+    gap: 21px;
+    .alsolikeListCard {
+      display: flex;
+      flex-direction: column;
+      img {
+        border-radius: 20px;
+      }
+      h3 {
+        color: #000;
+        font-family: Satoshi;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-top: 16px;
+      }
+      .productsListCardRating {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 8px 0px;
+        gap: 5px;
+        p {
+          color: #000;
+          font-family: Satoshi;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          padding-top: 2px;
+          padding-left: 10px;
+          span {
+            color: rgba(0, 0, 0, 0.6);
+            font-family: Satoshi;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+      }
+      .alsolikeListCardPrice {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        h4 {
+          color: #000;
+          font-family: Satoshi;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+        h5 {
+          color: rgba(0, 0, 0, 0.4);
+          font-family: Satoshi;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          text-decoration-line: strikethrough;
+        }
+        h6 {
+          border-radius: 62px;
+          background: rgba(255, 51, 51, 0.1);
+          padding: 6px 14px;
+          color: #f33;
+          font-family: Satoshi;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}

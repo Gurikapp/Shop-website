@@ -1,0 +1,229 @@
+@font-face {
+    font-family: "Integral CF";
+    src: local("Integral CF"), local("IntegralCF-Regular"),
+      url("/fonts/IntegralCF-Regular.eot?#iefix") format("embedded-opentype"),
+      url("/fonts/IntegralCF-Regular.woff2") format("woff2"),
+      url("/fonts/IntegralCF-Regular.woff") format("woff"),
+      url("/fonts/IntegralCF-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Satoshi";
+    src: url("IntegralCF-Regular.eot");
+    src: local("Satoshi-Variable"),
+      url("/fonts/Satoshi-Variable.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 5%;
+    gap: 40px;
+  
+    h2 {
+      color: #000;
+      font-family: Integral CF;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  
+    .headerMenulist {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+  
+      a {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: #000;
+        font-family: Satoshi;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+  
+        img {
+          padding-left: 4px;
+        }
+      }
+    }
+  
+    .headerSearch {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      border-radius: 62px;
+      background: #f0f0f0;
+      padding: 12px 16px;
+      padding-right: 374px;
+      gap: 12px;
+  
+      input {
+        border: none;
+        background: none;
+        color: rgba(0, 0, 0, 0.4);
+        font-family: Satoshi;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  
+    .headerCartprofile {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 14px;
+    }
+  }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    .footerSubscribemail {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 212px;
+      border-radius: 20px;
+      background: #000;
+      padding: 36px 64px;
+      margin: 0px 80px;
+      h2 {
+        color: #fff;
+        font-family: Integral CF;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 45px;
+      }
+      .subscribemailInput {
+        .subscribemailInputMail {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          border-radius: 62px;
+          background: #fff;
+          padding: 12px 16px;
+          gap: 12px;
+          input {
+            color: rgba(0, 0, 0, 0.4);
+            font-family: Satoshi;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding-right: 124px;
+          }
+        }
+        button {
+          border-radius: 62px;
+          background: #fff;
+          padding: 12px 124px;
+          margin-top: 14px;
+          color: #000;
+          font-family: Satoshi;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+      }
+    }
+    .footerLinks {
+      display: flex;
+      flex-direction: row;
+      padding: 50px 100px;
+      gap: 113px;
+      .footerLinksColumn {
+        display: flex;
+        flex-direction: column;
+        h2 {
+          color: #000;
+          font-family: Integral CF;
+          font-size: 33.455px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          padding-bottom: 25px;
+        }
+        .footerLinksColumnSocials {
+          padding-top: 35px;
+        }
+        h3 {
+          color: #000;
+          font-family: Satoshi;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 18px;
+          letter-spacing: 3px;
+          text-transform: uppercase;
+          padding-bottom: 26px;
+        }
+        a {
+          color: rgba(0, 0, 0, 0.6);
+          font-family: Satoshi;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 19px;
+          padding-top: 20px;
+        }
+        p {
+          color: rgba(0, 0, 0, 0.6);
+          font-family: Satoshi;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 22px;
+        }
+      }
+    }
+    .footerRights {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 75px 100px;
+      h4 {
+        color: rgba(0, 0, 0, 0.6);
+        text-align: right;
+        font-family: Satoshi;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      .footerRightsBanks{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 12px;
+          button{
+              background: none;
+              border: none;
+              border-radius: 100px;        }
+      }
+    }
+  }

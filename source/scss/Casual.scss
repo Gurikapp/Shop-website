@@ -1,0 +1,368 @@
+@import "Layout.scss";
+
+main {
+  padding: 0px 100px;
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+  border-top: rgba(0, 0, 0, 0.1) solid 1px;
+  padding-top: 24px;
+  a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Satoshi;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    span {
+      color: #000;
+      font-family: Satoshi;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
+
+.pagecont {
+  display: flex;
+  flex-direction: row;
+  padding-top: 24px;
+  gap: 20px;
+  .pagecontFilter {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 24px;
+    border-radius: 20px;
+    height: fit-content;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    .pagecontFilterBlockHeader {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-bottom: 24px;
+      h2 {
+        color: #000;
+        font-family: Satoshi;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      button {
+        background: none;
+        border: none;
+      }
+    }
+    .pagecontFilterTypes {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 24px 0px;
+      border-top: rgba(0, 0, 0, 0.1) solid 1px;
+      border-bottom: rgba(0, 0, 0, 0.1) solid 1px;
+      .pagecontFilterTypesElement {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        p {
+          color: rgba(0, 0, 0, 0.6);
+          font-family: Satoshi;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+        button {
+          border: none;
+          background: none;
+        }
+      }
+    }
+    .pagecontFilterPrice {
+      display: flex;
+      flex-direction: column;
+      padding: 24px 0px;
+      > img {
+        display: flex;
+        width: 247px;
+      }
+    }
+    .pagecontFilterColors {
+      padding: 24px 0px;
+      border-top: rgba(0, 0, 0, 0.1) solid 1px;
+      border-bottom: rgba(0, 0, 0, 0.1) solid 1px;
+      .pagecontFilterColorsPalette {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 15px;
+        button {
+          border: #00000033 1px solid;
+          border-radius: 50px;
+          padding: 10px;
+          width: 37px;
+          height: 37px;
+          img {
+            display: none;
+          }
+          &:hover {
+            img {
+              display: block;
+            }
+          }
+          &.Color1 {
+            background: #00c12b;
+          }
+          &.Color2 {
+            background: #f50606;
+          }
+          &.Color3 {
+            background: #f5dd06;
+          }
+          &.Color4 {
+            background: #f57906;
+          }
+          &.Color5 {
+            background: #06caf5;
+          }
+          &.Color6 {
+            background: #063af5;
+          }
+          &.Color7 {
+            background: #7d06f5;
+          }
+          &.Color8 {
+            background: #f506a4;
+          }
+          &.Color9 {
+            background: #ffffff;
+          }
+          &.Color10 {
+            background: #000000;
+          }
+        }
+      }
+    }
+    .pagecontFilterSize {
+      display: flex;
+      flex-direction: column;
+      padding: 24px 0px;
+      .pagecontFilterSizeValues {
+        display: grid;
+        gap: 8px;
+        button {
+          border-radius: 62px;
+          background: #f0f0f0;
+          padding: 10px 20px;
+          color: rgba(0, 0, 0, 0.6);
+          font-family: Satoshi;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          width: fit-content;
+          &:hover {
+            background: #000;
+            color: #fff;
+          }
+        }
+      }
+    }
+    > button {
+      border-radius: 62px;
+      background: #000;
+      color: #fff;
+      font-family: Satoshi;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      padding: 16px;
+    }
+  }
+  .pagecontProducts {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .pagecontProductsHeader {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 16px;
+      h1 {
+        color: #000;
+        font-family: Satoshi;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      .pagecontProductsHeaderPagenum {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        p {
+          color: rgba(0, 0, 0, 0.6);
+          font-family: Satoshi;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          padding-left: 12px;
+          span {
+            color: #000;
+            font-family: Satoshi;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+        }
+        button {
+          padding-left: 4px;
+          background: none;
+          border: none;
+        }
+      }
+    }
+    .pagecontProductsList {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+      border-bottom: rgba(0, 0, 0, 0.1) solid 1px;
+      padding-bottom: 32px;
+      .pagecontProductsListCard {
+        display: flex;
+        flex-direction: column;
+        cursor:pointer;
+        img {
+          border-radius: 20px;
+        }
+        h3 {
+          color: #000;
+          font-family: Satoshi;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          padding-top: 16px;
+        }
+        .pagecontProductsListCardRating {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding: 8px 0px;
+          gap: 5px;
+          p {
+            color: #000;
+            font-family: Satoshi;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding-top: 2px;
+            padding-left: 10px;
+            span {
+              color: rgba(0, 0, 0, 0.6);
+              font-family: Satoshi;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
+          }
+        }
+        .pagecontProductsListCardPrice {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 10px;
+          h4 {
+            color: #000;
+            font-family: Satoshi;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+          }
+          h5 {
+            color: rgba(0, 0, 0, 0.4);
+            font-family: Satoshi;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-decoration-line: strikethrough;
+          }
+          h6 {
+            border-radius: 62px;
+            background: rgba(255, 51, 51, 0.1);
+            padding: 6px 14px;
+            color: #f33;
+            font-family: Satoshi;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+        }
+      }
+    }
+    .pagecontProductsPages {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 20px;
+      padding-bottom: 80px;
+      > button {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border-radius: 8px;
+        border: #0000001a solid 1px;
+        background: none;
+        padding: 8px 14px;
+        color: #000;
+        font-family: Satoshi;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+      }
+      .pagecontProductsPagesNumber {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 4px;
+        button {
+          border-radius: 8px;
+          padding: 12px;
+          width: 40px;
+          background: none;
+          color: rgba(0, 0, 0, 0.5);
+          text-align: center;
+          font-family: Satoshi;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 20px;
+          &:hover {
+            background: rgba(0, 0, 0, 0.06);
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}

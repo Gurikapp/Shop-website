@@ -1,0 +1,683 @@
+@font-face {
+  font-family: "Integral CF";
+  src: local("Integral CF"), local("IntegralCF-Regular"), url("/fonts/IntegralCF-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/IntegralCF-Regular.woff2") format("woff2"), url("/fonts/IntegralCF-Regular.woff") format("woff"), url("/fonts/IntegralCF-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("IntegralCF-Regular.eot");
+  src: local("Satoshi-Variable"), url("/fonts/Satoshi-Variable.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 1440px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 24px 5%;
+  gap: 40px;
+}
+header h2 {
+  color: #000;
+  font-family: Integral CF;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+header .headerMenulist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+}
+header .headerMenulist a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #000;
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+header .headerMenulist a img {
+  padding-left: 4px;
+}
+header .headerSearch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 62px;
+  background: #f0f0f0;
+  padding: 12px 16px;
+  padding-right: 374px;
+  gap: 12px;
+}
+header .headerSearch input {
+  border: none;
+  background: none;
+  color: rgba(0, 0, 0, 0.4);
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+header .headerCartprofile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 14px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+footer .footerSubscribemail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 212px;
+  border-radius: 20px;
+  background: #000;
+  padding: 36px 64px;
+  margin: 0px 80px;
+}
+footer .footerSubscribemail h2 {
+  color: #fff;
+  font-family: Integral CF;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 45px;
+}
+footer .footerSubscribemail .subscribemailInput .subscribemailInputMail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 62px;
+  background: #fff;
+  padding: 12px 16px;
+  gap: 12px;
+}
+footer .footerSubscribemail .subscribemailInput .subscribemailInputMail input {
+  color: rgba(0, 0, 0, 0.4);
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-right: 124px;
+}
+footer .footerSubscribemail .subscribemailInput button {
+  border-radius: 62px;
+  background: #fff;
+  padding: 12px 124px;
+  margin-top: 14px;
+  color: #000;
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+footer .footerLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 50px 100px;
+  gap: 113px;
+}
+footer .footerLinks .footerLinksColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+footer .footerLinks .footerLinksColumn h2 {
+  color: #000;
+  font-family: Integral CF;
+  font-size: 33.455px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-bottom: 25px;
+}
+footer .footerLinks .footerLinksColumn .footerLinksColumnSocials {
+  padding-top: 35px;
+}
+footer .footerLinks .footerLinksColumn h3 {
+  color: #000;
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding-bottom: 26px;
+}
+footer .footerLinks .footerLinksColumn a {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  padding-top: 20px;
+}
+footer .footerLinks .footerLinksColumn p {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: Satoshi;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+footer .footerRights {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 75px 100px;
+}
+footer .footerRights h4 {
+  color: rgba(0, 0, 0, 0.6);
+  text-align: right;
+  font-family: Satoshi;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer .footerRights .footerRightsBanks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+}
+footer .footerRights .footerRightsBanks button {
+  background: none;
+  border: none;
+  border-radius: 100px;
+}
+
+main {
+  padding: 0px 100px;
+}
+
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 12px;
+  border-top: rgba(0, 0, 0, 0.1) solid 1px;
+  padding-top: 24px;
+}
+.head a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4px;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.head a span {
+  color: #000;
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 80px;
+  width: 100%;
+}
+.cart h1 {
+  color: #000;
+  font-family: "Integral CF";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-bottom: 24px;
+}
+.cart .cartContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+  width: 100%;
+}
+.cart .cartContent .cartContentLeftcolumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px 24px;
+  gap: 24px;
+  width: 100%;
+}
+.cart .cartContent .cartContentLeftcolumn > span {
+  border-top: rgba(0, 0, 0, 0.1) solid 1px;
+}
+.cart .cartContent .cartContentLeftcolumn .cartContentLeftcolumnProductcard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.cart .cartContent .cartContentLeftcolumn .cartContentLeftcolumnProductcard .cartContentLeftcolumnProductcardText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.cart .cartContent .cartContentLeftcolumn .cartContentLeftcolumnProductcard .cartContentLeftcolumnProductcardText .cartContentLeftcolumnProductcardImg {
+  padding-right: 16px;
+}
+.cart .cartContent .cartContentLeftcolumn .cartContentLeftcolumnProductcard .cartContentLeftcolumnProductcardText .cartContentLeftcolumnProductcardImg img {
+  border-radius: 8.658px;
+}
+.cart .cartContent .cartContentLeftcolumn .cartContentLeftcolumnProductcard .cartContentLeftcolumnProductcardText .cartContentLeftcolumnProductcardInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.cart .cartContent .cartContentLeftcolumn .cartContentLeftcolumnProductcard .cartContentLeftcolumnProductcardText .cartContentLeftcolumnProductcardInfo h2 {
+  color: #000;
+  font-family: Satoshi;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-bottom: 2px;
+}
+.cart .cartContent .cartContentLeftcolumn .cartContentLeftcolumnProductcard .cartContentLeftcolumnProductcardText .cartContentLeftcolumnProductcardInfo p {
+  color: #000;
+  font-family: Satoshi;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 4px;
+}
+.cart .cartContent .cartContentLeftcolumn .cartContentLeftcolumnProductcard .cartContentLeftcolumnProductcardText .cartContentLeftcolumnProductcardInfo p span {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: Satoshi;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cart .cartContent .cartContentLeftcolumn .cartContentLeftcolumnProductcard .cartContentLeftcolumnProductcardText .cartContentLeftcolumnProductcardInfo h3 {
+  padding-top: 11px;
+  color: #000;
+  font-family: Satoshi;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.cart .cartContent .cartContentLeftcolumn .cartContentLeftcolumnProductcard .cartContentLeftcolumnProductcardButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 56px;
+}
+.cart .cartContent .cartContentLeftcolumn .cartContentLeftcolumnProductcard .cartContentLeftcolumnProductcardButtons > button {
+  background: none;
+  border: none;
+}
+.cart .cartContent .cartContentLeftcolumn .cartContentLeftcolumnProductcard .cartContentLeftcolumnProductcardButtons .cartContentLeftcolumnProductcardButtonsAddremove {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  border-radius: 62px;
+  background: #f0f0f0;
+  padding: 12px 20px;
+}
+.cart .cartContent .cartContentLeftcolumn .cartContentLeftcolumnProductcard .cartContentLeftcolumnProductcardButtons .cartContentLeftcolumnProductcardButtonsAddremove button {
+  background: none;
+  border: none;
+}
+.cart .cartContent .cartContentLeftcolumn .cartContentLeftcolumnProductcard .cartContentLeftcolumnProductcardButtons .cartContentLeftcolumnProductcardButtonsAddremove p {
+  color: #000;
+  font-family: Satoshi;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.cart .cartContent .cartContentRightcolumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 24px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  gap: 24px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 70%;
+}
+.cart .cartContent .cartContentRightcolumn > button {
+  border-radius: 62px;
+  background: #000;
+  color: #fff;
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 16px 0px;
+}
+.cart .cartContent .cartContentRightcolumn > button img {
+  padding-left: 12px;
+}
+.cart .cartContent .cartContentRightcolumn h2 {
+  color: #000;
+  font-family: Satoshi;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.cart .cartContent .cartContentRightcolumn .cartContentRightcolumnCount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  border-bottom: rgba(0, 0, 0, 0.1) solid 1px;
+  padding-bottom: 20px;
+}
+.cart .cartContent .cartContentRightcolumn .cartContentRightcolumnCount .cartContentRightcolumnCountLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.cart .cartContent .cartContentRightcolumn .cartContentRightcolumnCount .cartContentRightcolumnCountLine p {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: Satoshi;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cart .cartContent .cartContentRightcolumn .cartContentRightcolumnCount .cartContentRightcolumnCountLine p span {
+  color: #000;
+  text-align: right;
+  font-family: Satoshi;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.cart .cartContent .cartContentRightcolumn .cartContentRightcolumnCount .cartContentRightcolumnCountLine p span a {
+  color: #f33;
+  text-align: right;
+  font-family: Satoshi;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.cart .cartContent .cartContentRightcolumn .cartContentRightcolumnTotal .cartContentRightcolumnTotalLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.cart .cartContent .cartContentRightcolumn .cartContentRightcolumnTotal .cartContentRightcolumnTotalLine p {
+  color: #000;
+  font-family: Satoshi;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cart .cartContent .cartContentRightcolumn .cartContentRightcolumnTotal .cartContentRightcolumnTotalLine p span {
+  color: #000;
+  font-family: Satoshi;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.cart .cartContent .cartContentRightcolumn .cartContentRightcolumnPromo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 12px;
+}
+.cart .cartContent .cartContentRightcolumn .cartContentRightcolumnPromo button {
+  border-radius: 62px;
+  background: #000;
+  padding: 12px 50px;
+  color: #fff;
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.cart .cartContent .cartContentRightcolumn .cartContentRightcolumnPromo .cartContentRightcolumnPromoInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 62px;
+  background: #f0f0f0;
+  width: 326px;
+}
+.cart .cartContent .cartContentRightcolumn .cartContentRightcolumnPromo .cartContentRightcolumnPromoInput input {
+  background: none;
+  color: rgba(0, 0, 0, 0.4);
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
